@@ -110,8 +110,10 @@ export async function getLatestInterviews(
 }
 
 export async function getInterviewsByUserId(
-  userId: string
+  userId: string | undefined
 ): Promise<Interview[] | null> {
+  if (!userId) return null; // 🛑 Avoid query if undefined
+
   const interviews = await db
     .collection("interviews")
     .where("userId", "==", userId)
