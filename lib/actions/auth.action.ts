@@ -19,7 +19,6 @@ export async function setSessionCookie(idToken: string) {
   cookieStore.set("session", sessionCookie, {
     maxAge: SESSION_DURATION,
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
     path: "/",
     sameSite: "lax",
   });
