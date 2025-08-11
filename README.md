@@ -51,7 +51,7 @@ Follow these steps to set up the project locally on your machine.
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/ai_mock_interviews.git
+git clone https://github.com/kranthi-77/ai_mock_interviews.git
 cd ai_mock_interviews
 ```
 
